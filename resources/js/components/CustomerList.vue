@@ -1,8 +1,8 @@
 <template>
-  <div class="max-w-5xl mx-auto p-8">
+  <div class="max-w-8xl mx-auto p-8">
     <!-- Header -->
-    <div class="flex justify-between items-center mb-6">
-      <h1 class="text-3xl font-bold text-gray-800">Customer List</h1>
+    <div class="flex justify-between items-center mb-6 ">
+      <h1 class="text-3xl font-bold text-slate-700">DW Customer List</h1>
       <router-link
         to="/new"
         class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
@@ -24,8 +24,12 @@
         <thead class="bg-gray-100 text-gray-700 uppercase text-sm">
           <tr>
             <th class="px-4 py-3 text-left">Name</th>
+            <th class="px-4 py-3 text-left">Address</th>
             <th class="px-4 py-3 text-left">Email</th>
             <th class="px-4 py-3 text-left">Phone</th>
+            <th class="px-4 py-3 text-left">Business Type</th>
+            <th class="px-4 py-3 text-left">Prefered Days</th>
+            <th class="px-4 py-3 text-left">Customer #</th>
             <th class="px-4 py-3 text-left">Actions</th>
           </tr>
         </thead>
@@ -33,11 +37,15 @@
           <tr
             v-for="customer in customers"
             :key="customer.customer_id"
-            class="border-t border-gray-200 hover:bg-gray-50"
+            class="border-t border-gray-200 hover:bg-gray-50 text-gray-700"
           >
             <td class="px-4 py-3">{{ customer.name }}</td>
-            <td class="px-4 py-3">{{ customer.email }}</td>
+            <td class="px-4 py-3">{{ customer.address1 }} {{ customer.address2 }} {{ customer.city }}, {{ customer.state }} {{ customer.zip }}</td>
+            <td class="px-4 py-3" >{{ customer.email }}</td>
             <td class="px-4 py-3">{{ customer.phone }}</td>
+            <td class="px-4 py-3">{{ customer.business_type }}</td>
+            <td class="px-4 py-3">{{ customer.preferred_days.join(', ') }}</td>
+            <td class="px-4 py-3">{{ customer.customer_id }}</td>
             <td class="px-4 py-3 space-x-2 flex items-center">
               <router-link
                 :to="`/edit/${customer.id}`"

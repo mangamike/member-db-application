@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.ts')
 </head>
-<body>
+<body class="min-h-screen bg-gradient-to-br from-slate-100 to-slate-500">
     <div id="app"></div>
 </body>
 </html>
