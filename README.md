@@ -29,8 +29,7 @@ This is a Laravel 12 + Vue 3 + Tailwind CSS CRUD application for managing of cus
 ### 1️⃣ Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/dw-customer-app.git
-cd dw-customer-app
+git clone https://github.com/mangamike/memebr-db-application.git
 ```
 
 ### 2️⃣ Copy `.env` file:
