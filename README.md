@@ -32,8 +32,10 @@ This is a Laravel 12 + Vue 3 + Tailwind CSS CRUD application for managing of cus
 git clone https://github.com/mangamike/member-db-application.git
 ```
 
-### 2️⃣ Build and Start the Docker containers:
-
+### 2️⃣ Copy '.env' file and Build and Start the Docker containers:
+```bash
+cp .env.example .env
+```
 ```bash
 docker compose up --build
 ```
@@ -60,7 +62,6 @@ docker exec -it laravel_app php artisan migrate
 ## 🗄️ Database Restoration
 
 To import the database (dump.sql) in PHPMyadmin:
-
 go to [http://localhost:8080](http://localhost:8080) in your browser.
 Log in using the laravel user credentials (these can be found in the .env file).
 select the 'laravel' database
@@ -69,6 +70,7 @@ Select your dump.sql file
 Leave the format as SQL
 Click Go at the bottom
 hooray! you now have data in your db!  let's go
+
 ---
 
 ## 💻 Access the app:
