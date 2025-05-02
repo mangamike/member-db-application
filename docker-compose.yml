@@ -4,7 +4,6 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: laravel_app
-    command: tail -f /dev/null
     ports:
       - "8000:8000"
     volumes:
