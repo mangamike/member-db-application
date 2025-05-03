@@ -73,6 +73,14 @@ hooray! you now have data in your db!  let's go
 
 ---
 
+##  Make sure dependencies are installed
+```bash
+npm install
+```
+```bash
+composer install
+```
+
 ## 💻 Access the app:
 
 ```bash
@@ -81,7 +89,7 @@ npm run build
 
 Open [http://localhost:8000](http://localhost:8000) in your browser.
 
-✅ You should see the Laravel homepage or app UI.
+✅ You should see now see the current customer list, where you can add edit or delete customers.
 
 ---
 
