@@ -8,7 +8,7 @@ This is a Laravel 12 + Vue 3 + Tailwind CSS CRUD application for managing of cus
 
 ✅ Laravel 12 backend  
 ✅ Vue 3 frontend (with Vue Router)  
-✅ Tailwind CSS 
+✅ Tailwind CSS   
 ✅ Full CRUD: Create, Read, Update, Delete  
 ✅ Validation on frontend  
 ✅ Dockerized MySQL + Laravel + PHP  
